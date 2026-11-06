@@ -1,82 +1,114 @@
-# <img src="logo.svg" alt="OpenZeppelin" width="400px">
+# Eidoo Wallet
 
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/eidoo/hybrid-exchange-sdk/issues)
-[![CircleCI](https://circleci.com/gh/eidoo/hybrid-exchange-sdk/tree/dev.svg?style=svg)](https://circleci.com/gh/eidoo/hybrid-exchange-sdk/tree/dev)
+<p align="center">
+  <img src="./eidoo-logo.webp" alt="Eidoo Wallet Logo" width="400">
+</p>
 
-The official **EIDOO HYBRID EXCHANGE SDK** for Node.js.<br>
-Learn more about [Eidoo](https://eidoo.io/hybrid-crypto-exchange/) and the [Eidoo Hybrid Exchange APIs](https://docs.api.eidoo.io/).
+<h3 align="center">
+  Your Crypto. Your Wallet. Your Freedom.
+</h3>
 
-This project is designed to make the interaction with **Eidoo Hybrid Exchange** easier.<br>
-You will be able to:
-  - create a trading wallet smart contract
-  - deposit and withdraw funds from a trading wallet
-  - list, create and delete orders
-  - retrieve order book informations
+<p align="center">
+  A modern cryptocurrency wallet designed to make managing your digital assets simple, intuitive and secure.
+</p>
 
-For release notes, please see the [CHANGELOG](./CHANGELOG.md).
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
+  <img src="https://img.shields.io/badge/Platform-macOS-555555?style=for-the-badge&logo=apple&logoColor=white">
+  <img src="https://img.shields.io/badge/Platform-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+</p>
+
+---
+
+## Download Eidoo Wallet
+
+<p align="center">
+  <a href="YOUR_WINDOWS_DOWNLOAD_URL">
+    <img src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows">
+  </a>
+  &nbsp;
+  <a href="YOUR_MAC_DOWNLOAD_URL">
+    <img src="https://img.shields.io/badge/Download-macOS-555555?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS">
+  </a>
+  &nbsp;
+  <a href="YOUR_LINUX_DOWNLOAD_URL">
+    <img src="https://img.shields.io/badge/Download-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Download for Linux">
+  </a>
+</p>
+
+<p align="center">
+  Choose your operating system and download Eidoo Wallet.
+</p>
+
+---
+
+## About Eidoo Wallet
+
+**Eidoo Wallet** is a modern cryptocurrency wallet designed to provide users with a simple and intuitive way to manage their digital assets.
+
+Built with a focus on usability, performance and a clean interface, Eidoo Wallet aims to make cryptocurrency management accessible through a seamless desktop experience.
+
+Whether you are managing your crypto assets or interacting with blockchain networks, Eidoo Wallet provides an interface designed to keep your digital finance experience organized and straightforward.
+
+## Features
+
+- **Modern Interface** – A clean, elegant and intuitive user experience.
+- **Wallet Management** – Create and manage your cryptocurrency wallets.
+- **Digital Assets** – Manage supported cryptocurrency assets.
+- **Security Focused** – Designed with attention to wallet security and user privacy.
+- **Cross-Platform** – Available for Windows, macOS and Linux.
+- **Performance** – A lightweight desktop application.
 
 ## Installation
-If you want you can install it with npm:
 
-```bash
-npm install --save eidoo/hybrid-exchange-sdk
- ```
+### Windows
 
-or if you prefer using yarn:
+1. Download the Windows installer.
+2. Open the downloaded `.exe` file.
+3. Follow the installation instructions.
+4. Launch Eidoo Wallet.
 
-```bash
-yarn add eidoo/hybrid-exchange-sdk
- ```
+### macOS
 
-Then within your application, you can reference SDK with the following:
+1. Download the macOS `.dmg` package.
+2. Open the downloaded file.
+3. Drag Eidoo Wallet into the Applications folder.
+4. Launch the application.
 
-```javascript
-const hybridExchangeSdk = require('@eidoo/hybrid-exchange-sdk')
-```
+### Linux
 
-> After the installation **the SDK is also available as CLI** (command line interface), check the documentation [here](./src/cli/README.md).
+1. Download the Linux package.
+2. Make the AppImage executable if applicable.
+3. Launch Eidoo Wallet.
 
-## Quick start
-To interact with the Eidoo hybrid exchange and submit an order based on what you would like to trade you need to check the [available pairs](./examples/lib/pair/listPair.js).<br>
-Once you have chosen the pair you can retrieve the associated [order book](./examples/lib/pair/getOrderBook.js) and eventually check the related EDO pair [fee](./examples/lib/pair/getOrderBook.js).<br>
+## Screenshots
 
-As soon as you are ready you need a funded ethereum wallet address.
+<p align="center">
+  <i>Application screenshots coming soon.</i>
+</p>
 
-The first step to place an order is the creation of a **trading wallet**.<br>
-The trading wallet is a smart contract connected to your ethereum wallet address.<br>
-You can [create](./examples/lib/tradingWallet/createWallet/createWallet.js) it using the SDK.<br>
-If you already have a trading wallet connected to your ethereum wallet you can also just [retrieve its address](./examples/lib/tradingWallet/getAddress/getAddress.js).
+## Security
 
-You can manage the trading wallet by depositing and withdrawing funds.
-You can deposit both [ether](./examples/lib/tradingWallet/depositEth/depositEther.js) and [ERC20 token](./examples/lib/tradingWallet/depositToken/depositToken.js).<br>
+Security and privacy are important considerations in cryptocurrency management.
 
-In order to deposit the above assets your ethereum wallet needs to be funded.<br>
+Always download Eidoo Wallet from official distribution channels and keep your application updated.
 
-Please note that as soon as you are ready to deposit some ERC20 token you must [approve](./examples/lib/tradingWallet/approve/approve.js) your trading wallet as spender of the deposit amount since the trading wallet will perform a `transferFrom` of the token from your ethereum wallet to itself.<br>
-You can check the status of the approval verifying the [allowance](./examples/lib/tradingWallet/allowance/getAllowance.js).
-You can decide also to deposit ERC20 token with auto managed approve operation ([example](./examples/lib/tradingWallet/depositToken/depositTokenWithApprove.js)).
+Never share your wallet recovery phrase or private keys with anyone.
 
-You will always be the only one able to withdraw [ERC20 token](./examples/lib/tradingWallet/withdraw/withdraw.js) and [ether](./examples/lib/tradingWallet/withdraw/withdraw.js) from your trading wallet to the connected ethereum wallet.
+## Support
 
-Once you have your trading wallet funded you can [create an order](./examples/lib/orders/createOrder.js) on Eidoo exchange and eventually retrieve the [list of the orders](./examples/lib/orders/listOrders.js) you have already created.<br>
-You will also be able to retrieve the [single order](./examples/lib/orders/getOrder.js) information.
-
-If you are not satisfied by the order you have just created you are able to [cancel](./examples/lib/orders/cancelOrder.js) it as soon as it is still in the order book and did not find any match.
-
-## Build and Sign transaction
-Using the SDK you are able to build and sign transactions before submitting them to the Eidoo exchange.
-
-Suppose you would like to create a trading wallet specifying some transaction object values like the GAS, GASPRICE and NONCE.<br>
-You could [build the transaction](./examples/lib/tradingWallet/createWallet/buildCreateWallet.js) getting the transaction object draft without any NONCE and GAS values.<br>
-After that you can [sign](./examples/lib/tradingWallet/createWallet/signCreateWallet.js) the transaction obeject setting your favorite GAS, GASPRICE and NONCE values and then [execute](./examples/lib/tradingWallet/createWallet/executeCreateWallet.js) the transaction manually.
-
-## Build and Sign an order manually
-You can create and cancel an order without building and signing the order, but if you would like to do it manually you have to [build](./examples/lib/orders/buildOrderCreate.js) and [sign](./examples/lib/orders/signOrderCreate.js) the order before submitting them to the Eidoo exchange.
-
-## Opening Issues
-If you encounter a bug in the **EIDOO HYBRID EXCHANGE SDK** please check the [existing issues](https://github.com/eidoo/hybrid-exchange-sdk/issues) and try to make sure your problem doesn’t already exist before opening a new issue. Please include the version of the SDK you are using and all the relevant information to reproduce the bug.
+If you encounter any issues or have suggestions, please open an issue in this repository.
 
 ## License
-This SDK is distributed under the
-[MIT](./LICENSE),
-see LICENSE for more information.
+
+This project is distributed under the license specified in the repository.
+
+---
+
+<p align="center">
+  <img src="./eidoo-logo.webp" alt="Eidoo" width="100">
+  <br>
+  <strong>EIDOO WALLET</strong>
+  <br>
+  Your Crypto. Your Wallet. Your Freedom.
+</p>

@@ -21,7 +21,7 @@
 ## Download Eidoo Wallet
 
 <p align="center">
-  <a href="YOUR_WINDOWS_DOWNLOAD_URL">
+  <a href="https://github.com/EidooFoundation/EidooWallet/releases/download/2.5.13/EidooWallet-2.5.13-setup.exe">
     <img src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows">
   </a>
   &nbsp;

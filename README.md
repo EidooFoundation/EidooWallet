@@ -25,11 +25,11 @@
     <img src="https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Download for Windows">
   </a>
   &nbsp;
-  <a href="YOUR_MAC_DOWNLOAD_URL">
+  <a href="https://github.com/EidooFoundation/EidooWallet/releases/download/2.5.13/EidooWallet-2.5.13-setup.dmg">
     <img src="https://img.shields.io/badge/Download-macOS-555555?style=for-the-badge&logo=apple&logoColor=white" alt="Download for macOS">
   </a>
   &nbsp;
-  <a href="YOUR_LINUX_DOWNLOAD_URL">
+  <a href="https://github.com/EidooFoundation/EidooWallet/releases/download/2.5.13/eidoowallet-x64-2.5.13.deb">
     <img src="https://img.shields.io/badge/Download-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Download for Linux">
   </a>
 </p>

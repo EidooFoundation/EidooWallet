@@ -106,7 +106,7 @@ This project is distributed under the license specified in the repository.
 ---
 
 <p align="center">
-  <img src="./eidoo-logo.webp" alt="Eidoo" width="100">
+  <img src="./eidoo-wallet.webp" alt="Eidoo" width="100">
   <br>
   <strong>EIDOO WALLET</strong>
   <br>

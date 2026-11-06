@@ -1,7 +1,7 @@
 # Eidoo Wallet
 
 <p align="center">
-  <img src="./eidoo-logo.webp" alt="Eidoo Wallet Logo" width="400">
+  <img src="./eidoo-wallet.webp" alt="Eidoo Wallet Logo" width="400">
 </p>
 
 <h3 align="center">

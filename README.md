@@ -10,11 +10,6 @@
   A modern cryptocurrency wallet designed to make managing your digital assets simple, intuitive and secure.
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white">
-  <img src="https://img.shields.io/badge/Platform-macOS-555555?style=for-the-badge&logo=apple&logoColor=white">
-  <img src="https://img.shields.io/badge/Platform-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-</p>
 
 ---
 
